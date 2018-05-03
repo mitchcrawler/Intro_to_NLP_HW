@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            
+            <head>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <title>Brat Embedding doc63.html</title>
+                <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+                <script type="text/javascript" src="js/head.js"></script>
+                <script type="text/javascript">
+              function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+              }
+            </script>
+            </head>
+            
+            <body>
+            
+            <!-- load all the libraries upfront, which takes forever. -->
+            <script type="text/javascript" src="js/brat_loader.js"></script>
+            
+            <script type="text/javascript">
+            
+            var collData = {
+                entity_types: [ {
+                        type   : 'Target',
+                        labels : ['Target', 'Tar'],
+                        // Blue is a nice colour for a person?
+                        bgColor: '#7fa2ff',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Modifier',
+                        labels : ['Modifier', 'Mod'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'lightgreen',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Termination',
+                        labels : ['Termination', 'Termi'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'orange',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                }]
+            };
+            
+            collData['relation_types'] = [ ];
+            
+            var docData={"text": "sex: f service: medicine allergies: amoxicillin attending:[**first name3 (lf) 175**] chief complaint: elective admission for right coronary artery stent major surgical or invasive procedure: right coronary artery stent history of present illness: 81 year old female with carotid artery stenosis, cad, severe pvd, h/o bilateral cea who presents with recurrent right carotid artery stenosis, s/p ica stent in [**2819**], now here for repeat stent.\nskin: no stasis dermatitis, ulcers, scars, or xanthomas. . pulses: right: carotid 2+ femoral 2+ popliteal 2+ dp dop pt dop left: carotid 2+ femoral 2+ popliteal 2+ dp dop pt dop pertinent results: pre procedure labs dated [**2819-5-6**]: wbc 6.6, hgb 13.9, hct 42.0, plt 186, inr 0.97, na 140, k 4.0, cl 99, co2 33, bun 9, cr 1.0 brief hospital course: patient is an 81 year-old female with carotid artery stenosis, cad, severe pvd, h/o bilateral cea who presents with recurrent right carotid artery stenosis, now s/p right ica stent without complications. .", "entities": [["T0", "Target", [[308.0, 311.0]]], ["T1", "Target", [[874.0, 877.0]]], ["T2", "Modifier", [[452.0, 454.0]]]], "relations": [["R0", "definite_negated_existence", [["Modifier", "T2"], ["Target", "T1"]]]]}
+            
+            </script>
+            <p>Rendering: doc63.html ...</p>
+            <div id="embedding-entity-example"></div>
+            <script type="text/javascript">
+                head.ready(function() {
+                    Util.embed('embedding-entity-example', $.extend({}, collData),
+                            $.extend({}, docData), webFontURLs);
+                });
+            </script>
+            
+            </body>
+            </html>
+            

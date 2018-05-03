@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            
+            <head>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <title>Brat Embedding doc24.html</title>
+                <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+                <script type="text/javascript" src="js/head.js"></script>
+                <script type="text/javascript">
+              function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+              }
+            </script>
+            </head>
+            
+            <body>
+            
+            <!-- load all the libraries upfront, which takes forever. -->
+            <script type="text/javascript" src="js/brat_loader.js"></script>
+            
+            <script type="text/javascript">
+            
+            var collData = {
+                entity_types: [ {
+                        type   : 'Target',
+                        labels : ['Target', 'Tar'],
+                        // Blue is a nice colour for a person?
+                        bgColor: '#7fa2ff',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Modifier',
+                        labels : ['Modifier', 'Mod'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'lightgreen',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Termination',
+                        labels : ['Termination', 'Termi'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'orange',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                }]
+            };
+            
+            collData['relation_types'] = [ ];
+            
+            var docData={"text": "sex: f service: neurology allergies: tetanus toxoid / azithromycin attending:[**first name3 (lf) 4315**] chief complaint: flank and back pain major surgical or invasive procedure: ct head w/o contrast mr head w/o contrast mra brain & neck w/o contrast cardiology echo renal u.s. ct chest w/o contrast ct abdomen w/o contrast ct chest w/o contrast cta abd w&w/o c & recons cta pelvis w&w/o c & recons history of present illness: the patient is an 89 year old woman with cad s/p imi in [**2819**], pvd, htn who initially presented to [**hospital 934**] hospital with left sided chest/flank pain.\npast medical history: pvd, gout, [**last name (un) 6292**] esophagus, gerd, atrial fibrillation, vetigo, skin squamous cell ca s/p excision, dyslipidemia, hypertension social history: social history is significant for previous tobacco use (25 pack years).\npertinent results: [**2826-6-24**] 02:30am blood wbc-9.7 rbc-3.94* hgb-12.4 hct-36.7 mcv-93 mch-31.4# mchc-33.7 rdw-14.8 plt ct-164 [**2826-6-24**] 02:30am blood neuts-84.1* lymphs-12.3* monos-2.6 eos-0.8 baso-0.3 [**2826-6-24**] 02:30am blood pt-11.7 ptt-23.5 inr(pt)-1.0 [**2826-6-24**] 02:30am blood glucose-167* urean-29* creat-1.4* na-140 k-4.4 cl-100 hco3-28 angap-16 [**2826-6-24**] 02:30am blood ck(cpk)-67 [**2826-6-30**] 05:05pm blood alt-29 ast-65* alkphos-99 amylase-79 totbili-0.3 [**2826-6-30**] 05:05pm blood lipase-44 [**2826-6-24**] 08:11am blood calcium-8.4 phos-3.7 mg-1.4* [**2826-6-30**] 05:05pm blood albumin-3.7 [**2826-7-1**] 04:30am blood cholest-121 [**2826-7-1**] 04:30am blood triglyc-80 hdl-56 chol/hd-2.2 ldlcalc-49 [**2826-6-26**] 08:57pm urine color-yellow appear-cloudy sp [**last name (un) 20**]-1.018 [**2826-6-26**] 08:57pm urine blood-lg nitrite-pos protein-30 glucose-neg ketone-neg bilirub-neg urobiln-1 ph-8.0 leuks-mod [**2826-6-26**] 08:57pm urine rbc-0-2 wbc-[**4-6**] bacteri-many yeast-none epi-0-2 brief hospital course: patient is a 89 yo rhf with ho pvd, htn, hyperlipidemia, afib, dmii who was admitted aneurysmal dilatation with intramural thrombus formation complicated by nstemi and now clinical left mca syndrome s/p iv tpa.", "entities": [["T0", "Target", [[496.0, 499.0]]], ["T1", "Target", [[616.0, 619.0]]], ["T2", "Target", [[1948.0, 1951.0]]]], "relations": []}
+            
+            </script>
+            <p>Rendering: doc24.html ...</p>
+            <div id="embedding-entity-example"></div>
+            <script type="text/javascript">
+                head.ready(function() {
+                    Util.embed('embedding-entity-example', $.extend({}, collData),
+                            $.extend({}, docData), webFontURLs);
+                });
+            </script>
+            
+            </body>
+            </html>
+            

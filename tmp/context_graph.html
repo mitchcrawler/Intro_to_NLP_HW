@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            
+            <head>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <title>Brat Embedding context_graph.html</title>
+                <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+                <script type="text/javascript" src="js/head.js"></script>
+                <script type="text/javascript">
+              function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+              }
+            </script>
+            </head>
+            
+            <body>
+            
+            <!-- load all the libraries upfront, which takes forever. -->
+            <script type="text/javascript" src="js/brat_loader.js"></script>
+            
+            <script type="text/javascript">
+            
+            var collData = {
+                entity_types: [ {
+                        type   : 'Target',
+                        labels : ['Target', 'Tar'],
+                        // Blue is a nice colour for a person?
+                        bgColor: '#7fa2ff',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Modifier',
+                        labels : ['Modifier', 'Mod'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'lightgreen',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Termination',
+                        labels : ['Termination', 'Termi'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'orange',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                }]
+            };
+            
+            collData['relation_types'] = [ ];
+            
+            var docData={"text": "on operative day three, the patient fever was detected with temperature 101.5 f.\nafter 3 days no fever was detected.\npatient came back for a follow up, denies fever.", "entities": [["T0", "Target", [[36.0, 41.0]]], ["T1", "Target", [[72.0, 79.0]]], ["T2", "Target", [[97.0, 102.0]]], ["T3", "Modifier", [[94.0, 96.0]]], ["T4", "Target", [[159.0, 164.0]]], ["T5", "Modifier", [[152.0, 158.0]]]], "relations": [["R0", "definite_negated_existence", [["Modifier", "T3"], ["Target", "T2"]]], ["R1", "definite_negated_existence", [["Modifier", "T5"], ["Target", "T4"]]]]}
+            
+            </script>
+            <p>Rendering: context_graph.html ...</p>
+            <div id="embedding-entity-example"></div>
+            <script type="text/javascript">
+                head.ready(function() {
+                    Util.embed('embedding-entity-example', $.extend({}, collData),
+                            $.extend({}, docData), webFontURLs);
+                });
+            </script>
+            
+            </body>
+            </html>
+            

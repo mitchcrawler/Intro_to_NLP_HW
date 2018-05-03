@@ -1,0 +1,26 @@
+T1	Medication 108 118	Citalopram
+T2	Symptom 142 161	depression symptoms
+R1	Treats Arg1:T1 Arg2:T2	
+A1	Negation T2 Affirmed
+T3	Symptom 224 231	fatigue
+T4	Medication 272 282	Citalopram
+R2	Treats Arg1:T4 Arg2:T3	
+T5	Symptom 296 313	suicidal ideation
+A2	Negation T5 Negated
+T6	Symptom 362 378	Light-headedness
+A3	Negation T6 Negated
+T8	Symptom 188 197	depressed
+T13	Medication 1042 1052	Citalopram
+T14	Medication 1083 1093	Lisinopril
+T15	Medication 1124 1131	Ferrous
+T16	Medication 1170 1180	Metoprolol
+T17	Medication 1210 1223	Acetaminophen
+T18	Medication 1260 1267	Aspirin
+T19	Medication 1298 1309	Simvastatin
+T7	Diagnosis 722 728	angina
+A4	Negation T7 Negated
+T9	Symptom 734 741	dyspnea
+A5	Negation T9 Negated
+T10	Symptom 677 686	knee pain
+A6	Negation T10 Negated
+A7	Experiencer T10 Patient

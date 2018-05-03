@@ -1,0 +1,57 @@
+<html>
+<h1>pipeUtils</h1>
+pipeUtils is a simple framework for simple NLP pipelines
+
+<h2>Classes and functions</h2>
+
+<h3> Annotation</h3>
+<pre>
+    from pipeUtils import Annotation
+    
+    ann1 = Annotation(start_index = 1, end_index = 10, type='Fever')
+    ann2 = Annotation(start_index = 12, end_index = 15, type='Temperature')
+    ann3 = Annotation(start_index = 20, end_index = 25, type='Value')
+    </pre>
+<h4>Annotation:Attributes</h4>
+<ul>
+    <li><b>ann_id</b> - Annotation identifier. Can be left blank.</li>
+    <li><b>start_index</b> - span starting index. Default -1</li>
+    <li><b>end_index</b> - span ending index. Default -1</li>
+    <li><b>type</b> - Annotation type. Default "Annotation"</li>
+    <li><b>attributes</b> - Dictionary for annotation attributes. Attribute name is the key and value is the attribute value.
+    </li>
+</ul>
+
+<h4>Annotation:Methods</h4>
+<ul>
+    <li><b>ann1.covers(ann2)</b> - Returns True if annotation 1 covers annotation 2</li>
+    <li><b>ann1.overlaps(ann2)</b> - Returns True if annotation 1 overlaps with annotation 2</li>
+    <li><b>ann1.exactMatch(ann2)</b> - Returns True if the span of annotation 1 exactly matches span of annotation 2</li>
+</ul>
+
+<h3> Document</h3>
+<pre>
+    from pipeUtils import Document
+    doc1 = Document(text='This is the document text')
+    </pre>
+<h4>Document:Attributes</h4>
+<ul>
+    <li> <b>document_id</b> - Document identifier</li>
+    <li> <b>text</b> - Document text</li>
+    <li> <b>annotations</b> - list of annotations</li>
+    <li> <b>attributes</b> - Dictionary for document attributes. Attribute name is the key and value is the attribute value.
+    </li>
+</ul>
+
+<h4>DocumentMethods</h4>
+<ul>
+    <li><b>doc.load_document_from_file(filename)</b> - loads document text into the Document object from a file</li>
+    <li><b>doc.load_annotations_from_brat(filename)</b> - loads annotaiton from file in brat format</li>
+    <li><b>doc.compare_types_by_span('AnnotationType1', 'AnnotationType2', exact=False)</b> - Returns three integers TP, FP, FN, and 3 lists tp_list, fp_list, and fn_list
+        for the document. If exact=True, then true positive requires exact match. If exact = False, then overlap is
+        counted as match.
+    </li>
+</ul>
+<br>
+<br>
+</html>

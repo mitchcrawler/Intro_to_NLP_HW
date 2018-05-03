@@ -1,0 +1,28 @@
+record_id,subject_id,note_id,annotation_type,span_start,span_end,PAD_snippet,neg_flag
+1999_13810_1,1999,1999_13810,pad_annotation,1142,1145,ABI,0
+14061_85453_1,14061,14061_85453,pad_annotation,1300,1303,ABI,0
+14061_85453_2,14061,14061_85453,pad_annotation,1437,1440,ABI,0
+14061_85453_3,14061,14061_85453,pad_annotation,2135,2138,ABI,0
+14061_85453_4,14061,14061_85453,pad_annotation,2254,2257,ABI,0
+14061_85453_5,14061,14061_85453,pad_annotation,1300,1309,ABI 0.53.,0
+14061_85453_6,14061,14061_85453,pad_annotation,1437,1453,"ABI of
+     0.47",0
+10083_60081_1,10083,10083_60081,pad_annotation,1182,1202,ankle brachial index,0
+10083_60081_2,10083,10083_60081,pad_annotation,1182,1209,ankle brachial index is 1.4,0
+14123_85314_1,14123,14123_85314,pad_annotation,955,977,ankle brachial indices,0
+14123_85314_2,14123,14123_85314,pad_annotation,1355,1377,Ankle brachial indices,0
+1795_12563_1,1795,1795_12563,pad_annotation,1005,1008,ABI,0
+1822_12904_1,1822,1822_12904,pad_annotation,1081,1106,"ankle brachial
+     index",0
+1822_12904_2,1822,1822_12904,pad_annotation,1081,1114,"ankle brachial
+     index is 0.64",0
+4550_28579_1,4550,4550_28579,pad_annotation,1417,1437,Ankle/brachial index,0
+4550_28579_2,4550,4550_28579,pad_annotation,1417,1454,Ankle/brachial index on the right 0.9,0
+13038_79867_1,13038,13038_79867,pad_annotation,1192,1195,ABI,0
+10594_63796_1,10594,10594_63796,pad_annotation,209,212,ABI,0
+10594_63796_2,10594,10594_63796,pad_annotation,1360,1380,ankle brachial index,0
+10594_63796_3,10594,10594_63796,pad_annotation,1537,1540,ABI,0
+10594_63796_4,10594,10594_63796,pad_annotation,1360,1388,ankle brachial index is 1.10,0
+10594_63796_5,10594,10594_63796,pad_annotation,1537,1548,ABI is 0.98,0
+4474_28336_1,4474,4474_28336,pad_annotation,984,1004,Ankle brachial index,0
+6454_38667_1,6454,6454_38667,pad_annotation,870,873,ABI,0

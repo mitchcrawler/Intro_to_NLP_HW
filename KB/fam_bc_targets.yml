@@ -1,0 +1,12 @@
+Comments: ''
+Direction: ''
+Lex: breast cancer
+Regex: ''
+Type: BREAST_CA
+---
+Comments: ''
+Direction: ''
+Lex: breast carcinoma
+Regex: ''
+Type: BREAST_CA
+

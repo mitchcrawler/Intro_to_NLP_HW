@@ -1,0 +1,27 @@
+<html>
+<h1>wrapperPyConText</h1>
+wrapperPyConText is a wrapper that allows to use pipeUtils framework.
+
+<h2>Classes and functions</h2>
+
+<h3>ConTextPipe</h3>
+pipeline to work with pyConText
+    <pre>
+        from wrapperPyConText imprt ConTextPipe
+        context_pipe = ConTextPipe(target_rules, context_rules)
+    </pre>
+
+<h4>ConTextPipe:Attributes</h4>
+<ul>
+    <li><b>targets</b> - can be either a sting that outlines the rules or a path to the file with rules in tsv or csv format. </li>
+    <li><b>modifiers</b> - can be either a string that outlines the rules or a path to the file with rules in tsv or csv format.</li>
+</ul>
+
+<h4>ConTextPipe:Methods</h4>
+<ul>
+    <li>process method accepts Annotation that specifies the sentence and the string that contains the full document text</li>
+        <pre>context_annotations = context_pipe.process(sentence_annotation, doc_text) </pre>
+    the method returns new annotations that resulted from processing. If no new annotaitons were created, the returned list will be empty.
+
+</ul>
+</html>

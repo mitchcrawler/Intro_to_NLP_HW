@@ -1,0 +1,63 @@
+General Medical Clinic
+05/28/2010 13:00
+
+
+CC
+Follow up depression.
+
+Subjective
+
+Depression
+The pt indicates Citalopram is helping control her depression symptoms but she continues to feel depressed most days.  Her sleep and fatigue have improved significantly with use of Citalopram.  She denies suicidal ideation.  Her PHQ-9 score is 18 today.
+
+Hypertension
+No Light-headedness.  The pt reports compliance with use of lisinopril and metoprolol.  She has been on these two medications for several years and has never used any other antihypertensive medications in her life.  She has not been checking her BP at home.
+
+Osteoarthritis
+Knee pain is well controlled currently.  No knee pain today.
+
+Coronary Artery Disease
+No angina.  No dyspnea.
+
+
+Allergies
+NKDA
+
+PMH
+Depression
+Hypertension
+Iron deficiency anemia
+Osteoarthritis
+Coronary Artery Disease
+Hyperlipidemia
+
+PSurgHx
+None 
+
+FamHx
+None significant
+
+SocHx
+Lifetime non-user of tobacco.
+Drinks alcohol rarely.
+Has 5 adult children.
+Unemployed (has had many different jobs).
+
+Medications
+Citalopram 20 mg PO daily #90, 3 refills
+Lisinopril 20 mg PO daily #90, 3 refills
+Ferrous sulfate 325 mg PO BID #180, 3 refills
+Metoprolol 50 mg PO BID #180, 3 refills
+Acetaminophen 1000 mg PO q6h PRN #120, 11 refills
+Aspirin 81 mg PO daily #90, 3 refills
+Simvastatin 40 mg PO daily #90, 3 refills
+
+Objective
+VITALS:
+	SBP:145, DBP:92, Pulse:76, POx:94, Temp:99.1, RR:14, Weight:198, Height:66, BMI:32
+EXAM:
+GEN: NAD, well developed and well nourished.
+HEART: RRR no M/R/G
+PSYCH: normal mood and behavior during interview.
+
+Author:  IM_Doctor

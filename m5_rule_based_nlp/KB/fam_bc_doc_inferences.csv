@@ -1,0 +1,7 @@
+DocConclusion,EvidenceTypes
+# The rule in document inferences are processed from top to bottom.
+# If any one of the rules is matched, the rest rules below it will be skipped.
+# if the document has a FAM_BREAST_CA annotation, conclude FAM_BREAST_CA_DOC.
+FAM_BREAST_CA_DOC,FAM_BREAST_CA
+# if no above rule matched, conclude NEG_BREAST_CA_DOC (default conclusion)
+NEG_BREAST_CA_DOC

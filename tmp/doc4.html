@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            
+            <head>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <title>Brat Embedding doc4.html</title>
+                <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+                <script type="text/javascript" src="js/head.js"></script>
+                <script type="text/javascript">
+              function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+              }
+            </script>
+            </head>
+            
+            <body>
+            
+            <!-- load all the libraries upfront, which takes forever. -->
+            <script type="text/javascript" src="js/brat_loader.js"></script>
+            
+            <script type="text/javascript">
+            
+            var collData = {
+                entity_types: [ {
+                        type   : 'Target',
+                        labels : ['Target', 'Tar'],
+                        // Blue is a nice colour for a person?
+                        bgColor: '#7fa2ff',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Modifier',
+                        labels : ['Modifier', 'Mod'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'lightgreen',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Termination',
+                        labels : ['Termination', 'Termi'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'orange',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                }]
+            };
+            
+            collData['relation_types'] = [ ];
+            
+            var docData={"text": "he then underwent left cfa to dp bypass on [**12-30**]. of note, creatinine was 1.7 on admission, which trended upward to 5.7 on [**1-1**]. past medical history: hypertension dm ii cad with inferior wall mi in [**3240**] (no catheterization) pmr on steroids peripheral vascular disease h/o duodenal ulcer cri chf bph dementia social history: lives with wife no etoh or drug use previous history of tobacco use family history: no family history of cad physical exam: physical exam on admission: p 75, bp 160/76, r 24, 100% sat exam significant for - resp: occasional scattered rhonchi - cv: rrr, s1 and s2 - extr: left extremity cool to the touch, motteld and necrotic digit pertinent results: [**3249-12-27**] 11:25pm glucose-552* urea n-44* creat-2.0* sodium-137 potassium-3.0* chloride-89* total co2-40* anion gap-11 [**3249-12-27**] 11:25pm ck(cpk)-297* [**3249-12-27**] 11:25pm ck-mb-4 [**3249-12-27**] 11:25pm calcium-7.2* phosphate-3.4 magnesium-1.6 [**3249-12-27**] 11:25pm wbc-7.5 rbc-2.83* hgb-9.1* hct-27.1* mcv-96 mch-32.4* mchc-33.8 rdw-13.7 [**3249-12-27**] 11:25pm plt count-156 [**3249-12-27**] 11:25pm pt-13.7* ptt-100.2* inr(pt)-1.2 [**3249-12-27**] 05:25pm inr(pt)-1.6 brief hospital course: 1) cad: suffered nstemi at outside hospital, c/b cardiogenic shock.\n5) vascular: he has a significant history of peripheral vascular disease, and is now s/p intervention followed by left cfa-dp bypass for this.\ndischarge disposition: extended care discharge diagnosis: primary diagnosis: nstemi - s/p cardiac catheterization secondary diagnosis: peripheral vascular disease with popliteal artery thrombosis s/p fem-dp bypass diabetes mellitus, type 2 medication induced delerium acute on chronic renal failure secondary to contrast nephropathy.", "entities": [["T0", "Target", [[258.0, 285.0]]], ["T1", "Modifier", [[153.0, 160.0]]], ["T2", "Target", [[1323.0, 1350.0]]], ["T3", "Modifier", [[1312.0, 1319.0]]], ["T4", "Target", [[1556.0, 1583.0]]], ["T5", "Modifier", [[1545.0, 1554.0]]]], "relations": [["R0", "definite_affirmed_existence", [["Modifier", "T1"], ["Target", "T0"]]], ["R1", "definite_affirmed_existence", [["Modifier", "T3"], ["Target", "T2"]]], ["R2", "definite_affirmed_existence", [["Modifier", "T5"], ["Target", "T4"]]]]}
+            
+            </script>
+            <p>Rendering: doc4.html ...</p>
+            <div id="embedding-entity-example"></div>
+            <script type="text/javascript">
+                head.ready(function() {
+                    Util.embed('embedding-entity-example', $.extend({}, collData),
+                            $.extend({}, docData), webFontURLs);
+                });
+            </script>
+            
+            </body>
+            </html>
+            

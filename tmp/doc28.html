@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html>
+            
+            <head>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <title>Brat Embedding doc28.html</title>
+                <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+                <script type="text/javascript" src="js/head.js"></script>
+                <script type="text/javascript">
+              function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+              }
+            </script>
+            </head>
+            
+            <body>
+            
+            <!-- load all the libraries upfront, which takes forever. -->
+            <script type="text/javascript" src="js/brat_loader.js"></script>
+            
+            <script type="text/javascript">
+            
+            var collData = {
+                entity_types: [ {
+                        type   : 'Target',
+                        labels : ['Target', 'Tar'],
+                        // Blue is a nice colour for a person?
+                        bgColor: '#7fa2ff',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Modifier',
+                        labels : ['Modifier', 'Mod'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'lightgreen',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                },
+                 {
+                        type   : 'Termination',
+                        labels : ['Termination', 'Termi'],
+                        // Blue is a nice colour for a person?
+                        bgColor: 'orange',
+                        // Use a slightly darker version of the bgColor for the border
+                        borderColor: 'darken'
+                }]
+            };
+            
+            collData['relation_types'] = [ ];
+            
+            var docData={"text": "major surgical or invasive procedure: none history of present illness: 85yo m with history of cad, dm, pvd, dementia referred by pcp to the [**name9 (pre) **] with altered mental status and failure to thrive.\nnon-diagnostic study - target hr was not achieved. ---chf: probable diastolic dysfunction, echo ([**6-10**]): ef 60%, e/a ratio: 0.53, moderate symmetric left ventricular hypertrophy, left ventricular inflow pattern suggests impaired relaxation, 1+ ar, 2+ mr [**name13 (stitle) 9448**]: bradycardia s/p pacemaker placement ---pvd: peripheral vascular disease s/p angioplasty of left common femoral artery with a dacron patch angioplasty and thrombectomy [**2850-9-13**], s/p left aka for acute left leg ischemia [**2850-9-16**] 2.\nbrief hospital course: 85m with history of cad, dm, pvd, and dementia who was referred by pcp to the [**name9 (pre) **] for altered mental status and failure to thrive [**2850-11-27**]. patient initially admitted to micu with ams, renal failure, gi bleed and troponin leak and found to have klebsiella uti and thought to be in urosepsis.\npiperacillin-tazobactam na 2.25 gm iv q8h . . allergies: nkda discharge disposition: expired discharge diagnosis: cardiopulmonary arrest urosepsis acute renal failure gib cad dm pvd dementia discharge condition: expired [**name6 (md) 144**] [**name8 (md) **] md [**md number 587**] completed by: [**first name11 (name pattern1) **] [**last name (namepattern1) 9451**] md [**md number 9452**] [**2850-12-4**] @ 1203 signed electronically by: dr. [**first name (stitle) 144**] [**name (stitle) **] on: mon [**2850-12-5**] 6:08 pm (end of report)", "entities": [["T0", "Target", [[103.0, 106.0]]], ["T1", "Target", [[535.0, 538.0]]], ["T2", "Target", [[792.0, 795.0]]], ["T3", "Target", [[1256.0, 1259.0]]]], "relations": []}
+            
+            </script>
+            <p>Rendering: doc28.html ...</p>
+            <div id="embedding-entity-example"></div>
+            <script type="text/javascript">
+                head.ready(function() {
+                    Util.embed('embedding-entity-example', $.extend({}, collData),
+                            $.extend({}, docData), webFontURLs);
+                });
+            </script>
+            
+            </body>
+            </html>
+            
